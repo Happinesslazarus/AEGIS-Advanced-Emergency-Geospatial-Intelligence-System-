@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(for d in severe_storm heatwave landslide power_outage water_supply infrastructure_damage public_safety environmental_hazard)",
+      "Bash(do echo \"=== $d ===\")",
+      "Read(//e/aegis-v6-fullstack/aegis-v6/server/src/incidents/$d/**)",
+      "Bash(done)",
+      "Bash(for lang in de pt hi zh sw)",
+      "Bash(do echo \"=== $lang ===\")",
+      "Read(//e/aegis-v6-fullstack/aegis-v6/client/src/i18n/locales/**)",
+      "Bash(grep -n \"import\\\\|IntelligenceDashboard\\\\|SystemHealthPanel\\\\|view === ''dashboard''\" e:/aegis-v6-fullstack/aegis-v6/client/src/pages/AdminPage.tsx)"
+    ]
+  }
+}
